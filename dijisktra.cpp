@@ -24,12 +24,12 @@ void display(vector<int> dist, vector<int> parent)
 
 int minimumValue(vector<int> dist, vector<bool> visited)
 {
-  int min = INT_MAX, index = -1;
+  int mini = INT_MAX, index = -1;
   for (int i = 0; i < n; i++)
   {
-    if (!visited[i] && dist[i] < min)
+    if (!visited[i] && dist[i] < mini)
     {
-      min = dist[i];
+      mini = dist[i];
       index = i;
     }
   }
